@@ -1,0 +1,27 @@
+{
+  "name": "sauce-demo-playwright-tests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Arquitetura profissional de testes E2E para a loja Sauce Demo Shopify",
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:regression": "playwright test --grep @regression",
+    "test:chromium": "playwright test --project=chromium",
+    "test:mobile": "playwright test --project=mobile-chrome",
+    "test:headed": "playwright test --headed --project=chromium",
+    "test:debug": "playwright test --debug --project=chromium",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/node": "26.6.2",
+    "dotenv": "18.0.1",
+    "typescript": "7.0.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
