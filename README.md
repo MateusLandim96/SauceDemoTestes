@@ -1,4 +1,4 @@
-# Testes E2E — Sauce Demo Shopify
+# Testes E2E no site Sauce Demo Shopify
 
 Suíte de testes Playwright + TypeScript para `https://sauce-demo.myshopify.com`, organizada para ser legível, escalável e adequada a CI.
 
